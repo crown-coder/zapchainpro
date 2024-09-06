@@ -1,0 +1,145 @@
+:root {
+  --color-light: rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 0.5rem var(--color-light);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+body {
+  width: 100%;
+  max-height: 100vh;
+  /* background-image: linear-gradient(to right, darkblue, rgb(3, 3, 175)); */
+  background-image: url("./Assets/zap.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.zapchain__bakground {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.zapchain__header {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+.zapchain__header h2 {
+  color: #fbfbfb;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.zapchain__header p {
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+}
+.zapchain__header button {
+  font-size: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fbfbfb;
+}
+.zapchain__userprofile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.user-profile {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 50px;
+  color: #fbfbfb;
+}
+.zapchain__userprofile h2 {
+  font-size: 30px;
+  color: #fbfbfb;
+}
+.zapchain__balance {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.zapchain__balance p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.zapchain__balance h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 55px;
+  color: #fbfbfb;
+}
+.zapchain__claim {
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background: goldenrod;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+}
+.zapchain__navigation {
+  margin-top: 80px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+}
+.zapchain__navigation a {
+  text-decoration: none;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zapchain__navigation a span {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+.active {
+  color: goldenrod;
+}
+/* remaining pages style */
+.zapchain__container {
+  width: 100%;
+  margin-top: 10px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fbfbfb;
+  font-size: 25px;
+  border-radius: 10px;
+}
